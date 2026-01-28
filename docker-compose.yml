@@ -1,0 +1,21 @@
+services:
+  poc-oracle:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: poc-oracle-assistant
+    volumes:
+      # Montar arquivo .env (se existir)
+      - ./.env:/app/.env:ro
+      # Montar pasta .oci completa (config e chaves)
+      # Usar caminho absoluto explícito
+      - /home/keniaferreira/vitru-api-template-sf/projects/poc-oracle/.oci:/root/.oci:ro
+    env_file:
+      - .env
+    environment:
+      # Sobrescrever OCI_CONFIG_FILE para apontar para dentro do container
+      - OCI_CONFIG_FILE=/root/.oci/config
+    stdin_open: true
+    tty: true
+    # Manter container rodando para interação
+    command: python main.py

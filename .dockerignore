@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Documentação
+*.md
+!README.md
+
+# Scripts de instalação locais
+install.sh
+fix_agents.sh
+get-pip.py
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Arquivos de exemplo
+exemplo.txt
+swagger.txt
