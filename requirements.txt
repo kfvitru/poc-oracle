@@ -1,5 +1,5 @@
-httpx>=0.27.0
-python-dotenv>=1.0.0
-openai-agents==0.6.6
-openai==2.15.0
-oci-openai==1.0.0
+httpx>=0.27.0 #cliente HTTP assíncrono para requisições REST
+python-dotenv>=1.0.0 #carregar variáveis de ambiente de um arquivo .env
+openai-agents==0.6.6 #framework para criar agentes de IA
+openai==2.15.0 #SDK da OpenAI
+oci-openai==1.0.0 #SDK da Oracle Cloud Infrastructure para integração com modelos OpenAI
